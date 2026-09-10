@@ -1,0 +1,512 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ประวัติศาสตร์ยุครัตนโกสินทร์ ควย</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Tahoma", sans-serif;
+            background: #f5f0e6;
+            color: #3b2a1a;
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #5c3b20, #9b6a32);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #2f2115;
+            text-align: center;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f0c674;
+        }
+
+        /* MAIN */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #704719;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        section h2::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            background: #b88945;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        /* INTRO */
+        .intro {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            margin-top: 35px;
+        }
+
+        /* คนที่ 5 อยู่ตรงกลางด้านบน */
+        .gallery-top {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .gallery-top .gallery-card {
+            width: calc(50% - 17.5px);
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+        }
+
+        /* รูปภาพขนาดใหญ่ */
+        .gallery-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: contain;
+            background: #eeeeee;
+            display: block;
+        }
+
+        .caption {
+            padding: 22px;
+            text-align: center;
+        }
+
+        .caption h3 {
+            color: #704719;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .caption p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* TIMELINE */
+        .timeline {
+            border-left: 4px solid #a8793d;
+            margin: 30px auto;
+            max-width: 850px;
+            padding-left: 35px;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 22px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: #a8793d;
+            border-radius: 50%;
+            position: absolute;
+            left: -45px;
+            top: 27px;
+        }
+
+        .timeline-item h3 {
+            color: #704719;
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #2f2115;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-top .gallery-card {
+                width: 100%;
+            }
+
+            .gallery-card img {
+                height: 450px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>ประวัติศาสตร์ยุครัตนโกสินทร์</h1>
+        <p>จากอดีตสู่ปัจจุบัน เรื่องราวแห่งแผ่นดินไทย</p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="#history">ประวัติความเป็นมา</a>
+        <a href="#gallery">ภาพประวัติศาสตร์</a>
+        <a href="#timeline">เหตุการณ์สำคัญ</a>
+    </nav>
+
+
+    <main class="container">
+
+        <!-- HISTORY -->
+
+        <section id="history">
+
+            <h2>ความเป็นมา</h2>
+
+            <div class="intro">
+
+                วันหนึ่ง เจ้าพระยาทั้ง ๔ นั่งคุยกันในเรือน
+                <br>
+
+                เจ้าพระยาคนที่หนึ่งพูดว่า
+                <br>
+
+                “พวกเราก็มีทั้งเงินทอง ยศศักดิ์ แต่เหตุใดยังไม่มีเมียกันสักคน?”
+                <br>
+
+                เจ้าพระยาคนที่สองตอบว่า
+                <br>
+
+                “จริง! เช่นนั้นพรุ่งนี้เราออกตามหาเมียกันเถิด”
+                <br>
+
+                วันรุ่งขึ้น เจ้าพระยาทั้ง ๔ จึงแต่งตัวหล่อ
+                ออกเดินทางไปตามตลาดและงานวัด หวังจะพบหญิงที่ถูกใจ
+                <br>
+
+                แต่เดินหาทั้งวันก็ไม่พบสักคน
+                <br>
+
+                จนเจ้าพระยาคนที่สี่พูดขึ้นว่า
+                <br>
+
+                “ข้าว่าเราไม่ได้หาเมียหรอก…”
+                <br>
+
+                ทั้งสามถามพร้อมกัน
+                <br>
+
+                “แล้วเราหาอะไร?”
+                <br>
+
+                เจ้าพระยาคนที่สี่ตอบ
+                <br>
+
+                <strong>“เรากำลังหาคนที่ยอมแต่งกับเราอยู่ต่างหาก!”</strong>
+                <br>
+
+                ทั้งสี่มองหน้ากัน แล้วถอนหายใจพร้อมกัน 😂
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGE GALLERY -->
+
+        <section id="gallery">
+
+            <h2>ภาพประวัติศาสตร์</h2>
+
+
+            <!-- รูปที่ 5 อยู่ตรงกลางด้านบน -->
+
+            <div class="gallery-top">
+
+                <div class="gallery-card">
+
+                    <img
+                        src="image5.jpg"
+                        alt="หัวแถว"
+                    >
+
+                    <div class="caption">
+
+                        <h3>หัวแถว</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- รูปที่ 1 - 4 -->
+
+            <div class="gallery">
+
+                <!-- รูปที่ 1 -->
+
+                <div class="gallery-card">
+
+                    <img
+                        src="image1.jpg"
+                        alt="ภาพกรุงเทพมหานครในอดีต"
+                    >
+
+                    <div class="caption">
+
+                        <h3>เจ้าพระยาออกเย</h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- รูปที่ 2 -->
+
+                <div class="gallery-card">
+
+                    <img
+                        src="image2.jpg"
+                        alt="ภาพพระบรมมหาราชวัง"
+                    >
+
+                    <div class="caption">
+
+                        <h3>พระยาหอก ตอกเสียหลัก</h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- รูปที่ 3 -->
+
+                <div class="gallery-card">
+
+                    <img
+                        src="image3.jpg"
+                        alt="ภาพประวัติศาสตร์ไทย"
+                    >
+
+                    <div class="caption">
+
+                        <h3>ขุนบรรลัย</h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- รูปที่ 4 -->
+
+                <div class="gallery-card">
+
+                    <img
+                        src="image4.jpg"
+                        alt="ภาพประวัติศาสตร์ยุครัตนโกสินทร์"
+                    >
+
+                    <div class="caption">
+
+                        <h3>พระยาหยอกตาก</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIMELINE -->
+
+        <section id="timeline">
+
+            <h2>เหตุการณ์สำคัญ</h2>
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <h3>
+                        - เจ้าพระยาออกเย -
+                    </h3>
+
+                    <p>
+                        ออกเดินทางตามหาเมีย
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>
+                        - พระยาหอก ตอกเสียหลัก -
+                    </h3>
+
+                    <p>
+                        ออกตามหาเมียจนเกือบเสียหลัก
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>
+                        - ขุนบรรลัย -
+                    </h3>
+
+                    <p>
+                        ผู้ร่วมเดินทางตามหาเนื้อคู่
+                    </p>
+
+                </div>
+
+
+                <!-- เหตุการณ์ที่ 4 -->
+
+                <div class="timeline-item">
+
+                    <h3>
+                        - พระยาหยอกตาก -
+                    </h3>
+
+                    <p>
+                        ผู้คิดแผนการออกตามหาเมีย
+                    </p>
+
+                </div>
+
+
+                <!-- เหตุการณ์ที่ 5 -->
+
+                <div class="timeline-item">
+
+                    <h3>
+                        - เจ้าพระยาคนที่ 5 -
+                    </h3>
+
+                    <p>
+                        ผู้มาสมทบในการออกตามหาเมีย
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 เว็บไซต์ประวัติศาสตร์ยุครัตนโกสินทร์
+        </p>
+
+        <p>
+            จัดทำเพื่อการศึกษาและเรียนรู้ประวัติศาสตร์ไทย
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
